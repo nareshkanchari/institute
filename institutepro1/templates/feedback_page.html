@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+<html>
+<head>
+    <title>Feedback Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+{% block content %}
+    <style>
+      #name1{
+        font-size: 30px;
+        color: whitesmoke;
+        font-family: cursive;
+        text-shadow: 2px 2px blue;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    label{
+        background-color: unset !important;
+        {#background-color: black !important;#}
+    }
+    </style>`
+    <div class="container mb-4">
+        <div class="row">
+            <div class="offset-md-2 col-md-9">
+                <form method="POST" class="bg-teal p-3 text-white">
+                    <h1>Please Enter your feedback</h1>
+                    {% csrf_token %}
+                    {% if ddata %}
+                        <h3>Your Feedbacks Are.......</h3>
+                    {% endif %}
+                    {% if ddata %}
+                        {% for i in ddata %}
+                            {% if i.rating >= 6 and i.rating <= 10 %}
+                            <b id="name1">  name: {{ i.name|capfirst }}</b><br>
+                                            rating: {{ i.rating }}<br>
+                                            date: {{ i.date }}<br>
+                                            feedback: {{ i.feedback }}<br><br>
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <h1>No data is available</h1>
+                    {% endif %}
+                    {{ fform }}<br>
+                    <input type="submit" value="Submit" class="btn btn-outline-success">
+                    <input type="reset" value="Clear" class="btn btn-outline-danger">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>z

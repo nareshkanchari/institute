@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    <title>Team Page</title>
+</head>
+<body>
+{% block content %}
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{#    <link rel="stylesheet" href="bootfont.html">#}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        .team{
+            background-color: #eee;
+        }
+    </style>
+    <div class="team">
+        <h1 >Our Team</h1>
+        <span class="sp1 mb-5"></span>
+
+        <div class="card-deck">
+          <div class="card">
+              <a href="#p1"> <img src="{% static 'img/team(4).jpg' %}" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Elon musk</h5>
+              <p class="font-weight-light">Elon Reeve Musk FRS is a technology enterpreneur,investor,and engineer.He holds South African,Canadian,and U.S. citizenship and is the founder, CEO,lead designer of Spacex, and partner in durgasoft and well explanation of the Rest api projects .</p>
+            </div>
+{#            <div class="card-footer">#}
+{#              <small class="text-muted">Last updated 3 mins ago</small>#}
+{#            </div>#}
+          </div>
+          <div class="card">
+              <a href="#p2"><img src="{% static 'img/team(6).jpg' %}" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Guido van Rossum</h5>
+              <p class="font-weight-light">Guido van Rossum is a Dutch programmer best known as the author of the Python programming language, for which he was the "Benevolent dictator for life" until he stepped down from the position in July 2018. He is currently a member of the Durga Software solution.</p>
+            </div>
+{#            <div class="card-footer">#}
+{#              <small class="text-muted">Last updated 3 mins ago</small>#}
+{#            </div>#}
+          </div>
+          <div class="card">
+              <a href="#p3"> <img src="{% static 'img/IMG_20190610_122429.jpg' %}" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Narayana</h5>
+              <p class="font-weight-light">Narayan is a indian programer and tutor best known as the famous django lecturer around Hyderabad, He conducts workshops free of cost for the students and he always says that "To be a good python programmer must have sound knowledge in language".</p>
+            </div>
+{#            <div class="card-footer">#}
+{#              <small class="text-muted">Last updated 3 mins ago</small>#}
+{#            </div>#}
+          </div>
+        </div>
+
+
+{#        <div class="card" style="width: 18rem;">#}
+{#            <div class="pics">#}
+{#                <a href="#p1"><img src="{% static 'img/team(1).jpg' %}" class="card-img-top"></a>#}
+{#               <div class="card-body">#}
+{#                <h5 class="card-title">Card title</h5>#}
+{#                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>#}
+{#                <a href="#" class="btn btn-primary">Go somewhere</a>#}
+{#             </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    <div class="pics">#}
+{#        <a href="#p1"><img src="{% static 'img/(13).jpg' %}" ></a>#}
+{#        <a href="#p2"><img src="{% static 'img/(13).jpg' %}" ></a>#}
+{#        <a href="#p3"><img src="{% static 'img/(13).jpg' %}" ></a>#}
+{#    </div>#}
+
+
+    <div class="section" id="p1">
+        <h1 class="name">Elon musk</h1>
+        <span class="sp1"></span>
+        <center><p class="text-dark">Rest-Api tutor </p></center>
+    </div>
+    <div class="section" id="p2">
+        <h1 class="name">Guido van Rossum</h1>
+        <span class="sp1"></span>
+        <center><p class="text-dark">python tutor</p></center>
+    </div>
+    <div class="section" id="p3">
+        <h1 class="name">Narayana</h1>
+        <span class="sp1"></span>
+        <center><p class="text-dark">Django tutor</p></center>
+    </div>
+    </div>
+
+{% endblock %}
+</body>
+
+</html>

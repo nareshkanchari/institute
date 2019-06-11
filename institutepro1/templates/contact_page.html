@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    <title>Contact Page</title>
+</head>
+<body>
+{% block content %}
+    <style>
+    label{
+        background-color: unset !important;
+        {#background-color: black !important;#}
+    }
+    </style>
+    <div class="container mt-5">
+        <form method="POST" class="bg-teal p-3 text-white">
+            <div class="form-group">
+                {% csrf_token %}
+                {{ cform }}<br>
+                <center><button type="submit" class="btn btn-outline-success">Submit</button>
+                <input type="reset" value="clear" class="btn btn-outline-danger"></center>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <div style="margin-top:100px;"></div>
+{% endblock %}
+</body>
+</html>

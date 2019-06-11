@@ -1,0 +1,150 @@
+body{
+    font-family: Arial, sans-serif;
+}
+.book-store-section{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.form-group{
+    margin: 5px;
+}
+input[type="text"],input[type='number']{
+    font-size: 18px;
+    height: 35px;
+    border-radius: 5px;
+    width: 200px;
+    border: 1px solid gray;
+    outline: none;
+}
+select{
+    font-size: 18px;
+    height: 35px;
+    width: 200px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+.fa{
+    background-color:lightblue;
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px solid #76bdd5;
+}
+.fa:hover{
+    box-shadow: 0 0 5px black;
+}
+#submit-btn{
+    background-color: #76bdd5;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin: 5px;
+    box-shadow: 0 0 5px black;
+}
+#submit-btn:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    color: black;
+}
+table{
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px black;
+}
+table , th , td{
+    border: 2px solid #76bdd5;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+thead{
+    background-color: #76bdd5;
+}
+tbody a{
+    color: black;
+}
+#msg-div{
+    width: 300px;
+    margin: auto;
+}
+#msg-div p{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+
+
+
+ #name1{
+    font-size: 30px;
+    color: red;
+    font-family: cursive;
+    text-shadow: 2px 2px blue;
+}
+#i1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+#i2{
+    float: left;
+
+}
+
+#i2 a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration:none;
+    text-shadow: 3px 3px 5px ghostwhite;
+    font-size: 20px;
+
+}
+.active{
+    background-color: green;
+}
+
+#i2 a:hover{
+    background-color: ghostwhite;
+    color: black;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px ghostwhite;
+
+}
+#h11{
+    font-size: 50px;
+    text-shadow: 5px 5px 5px blueviolet;
+    margin-top: -8px;
+}
+
+.bg-teal{
+    background: linear-gradient(45deg,black,teal,black);
+}
+ul{
+    list-style-type: none;
+}
+

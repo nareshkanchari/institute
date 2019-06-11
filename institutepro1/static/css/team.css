@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*body{*/
+/*    background-color: #44aaee;*/
+/*}*/
+
+.team{
+    background-color: #84ecff;
+    text-align: center;
+    padding: 60px;
+    overflow: hidden;
+}
+
+.team h1{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: darkgreen;
+}
+
+.sp1{
+    width: 250px;
+    height: 5px;
+    margin: auto;
+    display: block;
+    background-color: white;
+    margin-top: -30px;
+}
+.pics a{
+    /*display: inline-block;*/
+    margin: 0px 20px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.pics a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 1.5s;
+
+}
+
+.pics a img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.section{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    height: 0;
+    overflow: hidden;
+}
+
+
+.section:target{
+    height: auto;
+}
+
+.name{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
